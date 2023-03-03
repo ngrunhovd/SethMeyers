@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <script src="../javascript/javascript/quiz.js"></script>
+    <title>Seth Meyers Quiz</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="header">Quiz Game</h1>
+  </header>
+  
+  <nav>
+    ITSE 1311: Beginning Web Programs
+    <a class="nav" href="index.html" target="_self">Index</a> |
+    <a class="nav" href="quotes.html" target="_self">Quotes</a> |
+    <a class="nav" href="secret-number-game.html" target="_self">Number game</a> |
+    <a class="nav" href="quiz.html" target="_self">Quiz game</a> |
+    <a class="nav" href="test.html" target="_self">Test</a> |
+    <a class="nav" href="../itse1301/index.html" title="Visit the Web Design Tools page">ITSE 1301</a>
+  </nav>
+
+  <main> <!-- Call the quiz function -->
+    <section>
+      <h1 class="chapter">Seth Meyers Quiz</h1>
+      <script>
+        //meyersQuiz(); // for else-if score levels
+        let score = meyersQuiz();
+        //else if score levels
+        if (score >= 7){
+            document.write('Awesome! You scored ' + score + ' points!');
+        } else if (score > 0) {
+            document.write('Not bad, you got ' + score + ' points.'); 
+        } else {
+            document.write('Did you even try?, that\'s gonna be ' + score + ' points, ya jackal.'); 
+        }
+      </script>
+    </section>
+
+    <section>
+      <h2 class="chapter">Answer Sheet</h2>
+      <script>    //answer sheet for loop
+        for (i = 0; i < 3; i++) {
+            document.write(question[i] + "<br>&emsp;" + answer[i] + "<br>");
+        }  //close for loop
+      </script>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="https://www.dallascollege.edu/pages/default.aspx?gm-vt=1" target="_blank">Dallas College Website</a><br>
+    <a href="mailto:e2448648@student.dcccd.edu">Email the webmaster</a><br>
+    <a href="test.html" target="_self">Author: Nick G</a><br>
+    <a href="#top">Top of page</a>
+  </footer>
+
+</body>
+</html>

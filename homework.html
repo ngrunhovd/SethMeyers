@@ -1,0 +1,85 @@
+Edit in JSFiddle
+HTML
+Result
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML5 Forms</title>
+    <meta name="description" content="HTML5 Forms">
+    <meta name="author" content="Stephen Herd">
+
+    <!-- Optional Local Stylesheets -->
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Main Heading for The Page</h1>
+    </header>
+
+    <main>
+      <nav>
+        <h2>Site Menu</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Webform Mailer</h2>
+        <p>
+        This page was created to demonstrate the basic web form input types.
+        </p>
+        <fieldset>
+          <legend>This is a form demo.</legend>
+          <h3>Personal Information</h3>
+          <form id="myMailerForm" method="post" action="mailto:sherd@dcccd.edu">
+            <p>
+              <label title="Enter your full name.">Name <input type="text" name="Name" placeholder="Name"></label>
+            </p>
+            <p>
+              <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
+            </p>
+            <p>
+              <label title="Select your program.">Program</label>
+              <select name="programID">
+                <option value="">&larr;&nbsp;Select Program&nbsp;&rarr;</option>
+                <option value="1">Web Development</option>
+                <option value="2">Programming</option>
+                <option value="3">PC Support</option>
+                <option value="4">Networking Security</option>
+                <option value="5">Cloud Computing</option>
+              </select>
+            </p>
+            <p>
+              <label title="Select to be contacted."><input type="checkbox" name="contact-me"> Contact Me</label>
+            </p>
+            <h3>Message</h3>
+            <p>
+              <label title="Select if you have a question.">Question <input type="radio" name="request"></label>
+              <br>
+              <label title="Select if you have a comment.">Comment <input type="radio" name="request"></label>
+            </p>
+            <p>
+              <label for="message">Message</label><br>
+              <textarea id="message" name="message"></textarea>
+            </p>
+            <input type="submit" name="submit" value="Send Mail">
+          </form>
+        </fieldset>
+
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2021</p>
+    </footer>
+
+  </body>
+
+</html>

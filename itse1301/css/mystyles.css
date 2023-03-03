@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: navy
+}
+
+body {
+  background: linear-gradient(0deg, navy 40%, rgb(32, 131, 218));
+}  
+
+header {
+  width: 100%;
+  margin-left: auto;
+  margin-right:auto;
+  padding: .1em;
+  background-color: goldenrod;
+  border-style: none;
+  border-radius: 1em;
+}
+  
+nav {
+  width: 100%;
+  height: fit-content;
+  padding: .5em;
+  margin: .5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: goldenrod;
+  border-style: none;
+  border-radius: .5em;
+  font-size: 20px;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  width: 77%;
+  height: 100%;
+  margin: .5em;
+  padding: .5em;
+  float: left;
+  background-color: goldenrod;
+  border-style: none;
+  border-radius: 1em;
+}
+
+aside {
+  width: 20%;
+  height: auto;
+  right: 0;
+  margin: .5em;
+  margin-right: 7%;
+  padding: .5em;
+  position: fixed;
+  background-color: goldenrod;
+  border-style: none;
+  border-radius: 1em;
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  clear: both;
+  background-color: goldenrod;
+  border-style: none;
+  border-radius: 1em;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  text-indent: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+p.bio{
+    font-size: 20px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+  .header{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .title{
+    font-size: 32px;
+  }
+
+  .chapter{
+    font-size: 25px;
+  }
+
+a {
+  color: black;
+  text-decoration-line: none;
+  transition: text-decoration .2s;
+}
+
+  a:hover {
+    color: aliceblue;
+    transition: color .2s;
+  }
+
+  a:active {
+    color:lightskyblue;
+  }
+
+  a.nav:hover{
+    transition: color .2s;
+    text-shadow: 0px 0px 10px black, 0 0 2px navy;  
+  }
+
+.profile {
+  width: 100%;
+  padding: .5em;
+  border-style: none;
+  border-radius: 1em;
+}
+
+.nickPic {
+  width: 52%;
+  border-style: none;
+  border-radius: 1em;
+}
+
+.gallery {
+  width: 80%;
+  padding: .5em;
+  border-style: none;
+  border-radius: 2em;
+  text-align: center;
+}
+
+li {
+  margin-top: .5em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+#list {
+  list-style-type: circle;
+}
+
+#questions {
+  font-size: 20px;
+  list-style-type: decimal;
+}
+
+#answers, dt {
+  font-style: italic;
+  font-size: 16px;
+  margin: .5em;
+}
+
+#answers, dd {
+  font-style: normal;
+  font-size: 20px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  text-align: justify;
+}
+
+#contact-us {
+  background-color: aliceblue;
+  width: max-content;
+  float: left;
+  margin-left: 5em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+
+#contact-us, p {
+  text-indent: 0;
+}
+
+#career-table {
+  background-color: goldenrod;
+  float: left;
+  margin: 5em;
+  caption-side: bottom;
+}
+
+#career-table, caption {
+  padding: .5em;
+}
+
+input[type=text] {
+  width: 75%;
+}
+
+input[type=radio] {
+  margin-left: 1.5em;
+}
+
+#message {
+  width: 100%;
+  height: 5em;
+}

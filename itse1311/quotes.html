@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="../favicon.ico">
+  <title>Seth Meyers Quotes</title>
+  <link rel="stylesheet" href="css/mystyles.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="header">Random Quote of the Day</h1>
+  </header>
+  
+  <nav>
+    ITSE 1311: Beginning Web Programs
+    <a class="nav" href="index.html" target="_self">Index</a> |
+    <a class="nav" href="quotes.html" target="_self">Quotes</a> |
+    <a class="nav" href="secret-number-game.html" target="_self">Number game</a> |
+    <a class="nav" href="quiz.html" target="_self">Quiz game</a> |
+    <a class="nav" href="test.html" target="_self">Test</a> |
+    <a class="nav" href="../itse1301/index.html" title="Visit the Web Design Tools page">ITSE 1301</a>
+  </nav>
+
+  <main> <!-- Quote of the day -->
+    <section>
+      <h1 class="chapter">Today's quote...</h1>
+      <!--<p class="quote" id="quotetoday"></p>
+      <p class="subquote">- Seth Meyers</p>-->
+      <script>
+        console.log("Quote of the day");
+        /*assign quotes to an array element and then prompt the user for a number, use that number to run a 
+      function that returns an assigned quote for that 'day', display that quote to the user
+      (update maybe? link to .js using 31 quotes for each day and use num%31?)*/
+        let quote0 =
+          "I was very much aiming to go into movies eventually, like a lot of 'SNL' people. But, \
+        soon after I arrived, all these really good actors started, like Fred Armisen, Bill Hader, Jason Sudeikis \
+        and Andy Samberg, and I thought, 'If I were casting a movie, I would put all of them in it over me.'";
+        let quote1 =
+          "People say, 'Oh, you're doing the job of journalists.' I think it's very important \
+        to note that we can't do our job without journalists. Journalists can do their job without late-night \
+        comedians. They'd be just fine without us. But we, of course, use their work every day to build our pieces.";
+        let quote2 =
+          "We made a choice not to go back to wearing suits, mostly because the show’s on at 12:30 \
+        (at night) and I don’t think anybody who’s watching is wearing a (f-ing) suit. If people were wearing \
+        suits in their home at 12:30, I would put my suit back on.";
+        let quote3 =
+          "Sal Gentile, who writes 'A Closer Look,' made a really good observation about what \
+        happened to our show, which is we used to be a sane show for sane people in a crazy world. And then we \
+        became crazy people.";
+        let quote4 =
+          "My parents introduced me to 'SNL,' Monty Python, and Richard Pryor probably way earlier \
+        than they had any right to.";
+
+        const quotes = [quote0, quote1, quote2, quote3, quote4]; //quote array
+
+        var num = prompt("Enter your favorite number for the Seth quote of the day");
+        var result = num % 5;
+        var quotetoday = quotes[result];
+        /*document.getElementById("quotetoday").innerHTML =
+          '"' + quotetoday + '"';*/
+        document.write('"' + quotetoday + '"<br> - Seth Meyers');
+      </script>
+    </section>
+
+    <section> <!-- Favorite links -->
+      <h2 class="chapter">
+        Here are some of our favorite links for news and current events</h2>
+        <script>
+        /* create and display an array of 3 favorite website links, prompt the user for their favorite site 
+      and replace the first link in the array, display the results to the user	*/
+        console.log("links");
+
+        link0 = "<a href='https://www.apnews.com'>www.apnews.com</a>";
+        link1 = "<a href='https://www.bbc.com'>www.bbc.com</a>";
+        link2 = "<a href='https://www.npr.org'>www.npr.org</a>";
+        const links = [link0, link1, link2];
+
+        document.write(links);
+
+        window.confirm("Here are some of our favorite links for news and current events.");
+      </script>
+    </section>
+
+    <section> <!-- the new links -->
+      <h3 class="chapter">
+        You would pick that one. Here's your new list, <em>ya jackal</em></h3>
+      <script>
+        // ask the user for a new link, add to the end of the array, remove the first link and return the new list
+        console.log("userlink");
+        let text = prompt("What's your favorite website to browse for current event updates?\nEnter the webiste URL following the www.");
+        userlink = "<a href='https://www." + text + "'>www." + text + "</a>";
+        links.push(userlink);
+        links.shift();
+        document.write(links);
+      </script>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="https://www.dallascollege.edu/pages/default.aspx?gm-vt=1" target="_blank">Dallas College Website</a><br>
+    <a href="mailto:e2448648@student.dcccd.edu">Email the webmaster</a><br>
+    <a href="test.html" target="_self">Author: Nick G</a><br>
+    <a href="#top">Top of page</a>
+  </footer>
+</body>
+</html>
