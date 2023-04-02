@@ -7,13 +7,13 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="apple-touch-icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/1311styles.css">
-    <script src="../javascript/javascript/quiz.js"></script>
-    <title>Seth Meyers Quiz</title>
+    <script src="../javascript/javascript/trivia.js"></script>
+    <title>Seth Meyers Trivia</title>
 </head>
 
 <body>
   <header>
-    <h1 class="header">Quiz Game</h1>
+    <h1 class="header">Trivia Game</h1>
   </header>
   
   <nav class="topnav">
@@ -27,19 +27,40 @@
     <a class="navRT" href="../itse1301/index.html" title="Visit the Web Design Tools page">ITSE 1301</a>
   </nav>
 
-  <main> <!-- Call the quiz function -->
+  <main>
     <section>
-      <h1 class="chapter">Seth Meyers Quiz</h1>
       <script>
-        //meyersQuiz(); // for else-if score levels
-        let score = meyersQuiz();
+        let user = prompt ("What is your name?");
+        todayMsg(user); // prompt to greet the user and diplay date and time
+      </script>
+    </section>
+
+    <section>
+      <h2 class="chapter">Trivia User Name</h2>
+      <script>
+        let email = prompt("What is your email?");
+        userEmail(email);
+      </script>
+    </section>
+
+    <section>
+      <h2 class="chapter">Random Quote of the Day</h2>
+      <script>
+        todayQuote(); // a quote is is picked at random from an array
+      </script>
+    </section>
+
+    <section>
+      <h2 class="chapter">Triva Game</h2>
+      <script>
+        let avg = meyersTrivia();
         //else if score levels
-        if (score >= 7){
-            document.write('<p>Awesome! You scored ' + score + ' points!</p>');
-        } else if (score > 0) {
-            document.write('<p>Not bad, you got ' + score + ' points.</p>'); 
+        if (avg >= 80){
+            document.write('<p>Awesome! You scored ' + avg + '%!</p>');
+        } else if (avg > 34) {
+            document.write('<p>Not bad, you got ' + avg + '%.</p>'); 
         } else {
-            document.write('<p>Did you even try?, that\'s gonna be ' + score + ' points, ya jackal.</p>'); 
+            document.write('<p>Did you even try?, that was only ' + avg + '%, ya jackal.</p>');
         }
       </script>
     </section>
@@ -48,7 +69,7 @@
       <h2 class="chapter">Answer Sheet</h2>
       <script>    //answer sheet for loop
         for (i = 0; i < 3; i++) {
-            document.write('<p>' + question[i] + '<br>&emsp;' + answer[i] + '</p>');
+          document.write('<p>' + question[i] + "<br>&emsp;" + answer[i] + "</p>");
         }  //close for loop
       </script>
     </section>
@@ -60,6 +81,5 @@
     <p><a href="test.html" target="_self">Author: Nick G</a></p>
     <p><a href="#top">Top of page</a></p>
   </footer>
-
 </body>
 </html>

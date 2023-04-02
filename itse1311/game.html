@@ -8,12 +8,13 @@
   <link rel="shortcut icon" href="../favicon.ico">
   <link rel="apple-touch-icon" href="../favicon.ico">
   <link rel="stylesheet" href="../css/1311styles.css">
-  <title>My First Page</title>
+  <script src="../javascript/javascript/game.js" defer=""></script>
+  <title>Multiple Guess Game</title>
 </head>
 
 <body>
   <header>
-    <h1 class="header">Hello World!</h1>
+    <h1 class="header">Multiple Guess Game</h1>
   </header>
 
   <nav class="topnav">
@@ -28,19 +29,11 @@
   </nav>
 
   <main>
-    <section>
-      <article>
-        <h2 class="title">About the author...</h2>
-        <p class="paragraph">
-          My name is Nick, I grew up in the DFW area and now live in Dallas while working at Parkland. I've been an x-ray tech for 
-          over 10 years and I'm read for a change and to challenge myself to learn something new. I am still new to programming but 
-          I think web development will be a good start to test my creative and problem solving skills. I enjoy doing artistic 
-          and outdoor hobbies, so I hope to find a career that is fun to work in and with more time to explore the world.
-        </p>
-      </article>
-      <article id="aside">
-        <img class="profile" src="../images/nickPic.jpg" alt="nickPic.jpg"></a>
-      </article>
+    <section class="game">
+      <p id="gameDir"></p>
+      <p id="question"></p>
+      <ol id="answers"></ol>
+      <div id="prompt"></div>
     </section>
   </main>
 

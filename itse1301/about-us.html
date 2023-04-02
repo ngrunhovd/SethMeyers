@@ -1,0 +1,266 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Nick Grunhovd Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    </style>
+    </head>
+    <body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+        </a>
+        <img src="../images/nickPic.jpg" style="width:85%;" class="w3-round w3-margin"><br><br>
+        <h4><b>Nick Grunhovd</b></h4>
+        <p class="w3-text-grey">Welcome to my page. Please check out my art and contact me for more.</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        <a href="https://www.instagram.com/n.grunhovd/" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-instagram fa-fw w3-margin-right"></i>INSTAGRAM</a>
+    </div>
+    <div class="w3-panel w3-large">
+        <img src="../images/n.grunhovd_qr.png" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Ballpoint pen meme sketch">
+    </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="../images/nickPic.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <h1><b>My Portfolio</b></h1>
+            <div class="w3-section w3-bottombar w3-padding">
+                <button class="w3-button w3-round w3-white"><a href="#art"><i class="fa fa-paint-brush w3-margin-right"></i><span class="w3-hide-small">Art</span></a></button>
+                <button class="w3-button w3-round w3-white"><a href="#photoshop"><i class="fa fa-photo w3-margin-right"></i><span class="w3-hide-small">Photoshop</span></a></button>
+                <button class="w3-button w3-round w3-white"><a href="#photography"><i class="fa fa-camera-retro w3-margin-right"></i><span class="w3-hide-small">Photography</span></a></button>
+            </div>
+        </div>
+    </header>
+    
+        <!-- Photo grid -->
+        <div class="w3-row w3-grayscale-min">
+            <div class="w3-container w3-padding-large">
+                <h4 id="art"><i class="fa fa-paint-brush w3-margin-right"></i><b>Art</b></h4></div>
+            <div class="w3-third">
+                <img src="../images/portDraw1.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Cat mechanical pencil drawing">
+                <img src="../images/portColor3.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Rey under the stars, alcohol markers with mixed-media gel sticks and acrylic paint">
+            </div>
+            
+            <div class="w3-third">
+                <img src="../images/portDraw2.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Ballpoint pen meme sketch">
+                <img src="../images/portColor4.png" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Sully chasing a Cap snack, alcohol markers">
+            </div>
+
+            <div class="w3-third">
+                <img src="../images/portColor1.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="General Grievous coloring page">
+                <img src="../images/portColor2.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="General Grievous, alcohol markers with mixed-media gel sticks and colored pencils">
+            </div>
+            <a href="#top" class="w3-btn w3-right">Top</a>
+            <div class="w3-container w3-padding-large">
+                <h4 id="photoshop"><i class="fa fa-photo w3-margin-right"></i><b>Photoshop</b></h4></div>
+            <div class="w3-half">
+                <div class="w3-display-container"><div class="w3-display-topleft w3-black w3-margin w3-padding">Restoration</div>
+                <img src="../images/portRecolor1.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Photo restoration and coloring Before"></div>
+                <img src="../images/portRecolor2.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Photo restoration and coloring After">
+
+                <div class="w3-display-container"><div class="w3-display-topleft w3-black w3-margin w3-padding">Retouching</div>
+                <img src="../images/portRetouch1.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Photo retouching Before"></div>
+                <img src="../images/portRetouch2.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Photo retouching After">
+
+                <div class="w3-display-container"><div class="w3-display-topleft w3-black w3-margin w3-padding">Enhancing</div>
+                <img src="../images/portEdit1.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Photo retouching Before"></div>
+                <img src="../images/portEdit2.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Photo retouching After">
+            </div>
+            <div class="w3-half">
+                <div class="w3-display-container"><div class="w3-display-topleft w3-black w3-margin w3-padding">Custom</div>
+                <img src="../images/portShop1.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Green Apple Mike Wazowski"></div>
+                <img src="../images/portShop2.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Visit the lost world of Atlantis collage">
+                <img src="../images/portShop3.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Space calamity collage">
+                <img src="../images/portShop4.png" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Cartoon sticker">
+            </div>
+            <a href="#top" class="w3-btn w3-right">Top</a>
+            <div class="w3-container w3-padding-large">
+                <h4 id="photography"><i class="fa fa-camera-retro w3-margin-right"></i><b>Photography</b></h4></div>
+            <div class="w3-half">
+                <img src="../images/portPhoto1.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Mesa Verde Valley, CO">
+                <img src="../images/portPhoto2.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Mesa Verde Valley, CO">
+                <img src="../images/portPhoto6.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Reunion Tower, Dallas, TX">
+                <img src="../images/portPhoto5.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Giant Eyeball, Dallas, TX">
+            </div>
+            <div class="w3-half">
+                <img src="../images/portPhoto3.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Mesa Verde Valley, CO">
+                <img src="../images/portPhoto4.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Mesa Verde Valley, CO">
+                <img src="../images/portPhoto7.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Castelo do Queijo, Porto, Portugal">
+                <img src="../images/portPhoto8.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Luis I Bridge, Porto, Portugal">
+                <img src="../images/portPhoto9.jpg" class="w3-padding" style="width:100%" onclick="onClick(this)" alt="Catholic Cathedral, Porto, Portugal">
+            </div>
+            <a href="#top" class="w3-btn w3-right">Top</a>
+        </div><hr>
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption"></p>
+        </div>
+        </div>
+        <!-- Images of Me -->
+        <div class="w3-row-padding w3-padding" id="about">
+        <div class="w3-col m12">
+            <img src="../images/portNick.jpg" alt="Me" style="width:100%">
+        </div>
+        </div>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h4><b>About Me</b></h4>
+        <p>My name is Nick, I grew up in the DFW area and now live in Dallas while working at Parkland Hospital. I've been an x-ray tech for 
+        over a decade and I'm ready for a change and to challenge myself to learn something new. I enjoy doing artistic and creative hobbies, 
+        gardening, remodeling around the house, and exploring the great outdoors. I am quick to learn new skills with a desire to learn how 
+        things work. I hope to test my creative and problem solving skills while beginning a new career that is equally, rewarding, and allows 
+        me to follow dreams of becoming a starving artist.</p>
+        <hr>
+        
+        <h4>Technical Skills</h4>
+        <!-- Progress bars / Skills -->
+        <p>Photoshop</p>
+        <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90%</div>
+        </div>
+        <p>Photography</p>
+        <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+        </div>
+        <p>Art Design</p>
+        <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+        </div>
+        <p>Illustrator</p>
+        <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70%</div>
+        </div>
+        <p>Web Design</p>
+        <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70%</div>
+        </div>
+    <hr>
+    
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-large w3-grey">
+        <h4 id="contact"><b>Contact Me</b></h4>
+        <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 px">
+        <div class="w3-third w3-dark-grey">
+            <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+            <p>ngrunhovd@gmail.com</p>
+        </div>
+        <div class="w3-third w3-teal">
+            <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+            <p>Dallas, TX</p>
+        </div>
+        <div class="w3-third w3-dark-grey">
+            <p><i class="fa fa-instagram w3-xxlarge w3-text-light-grey"></i></p>
+            <p>@n.grunhovd</p>
+        </div>
+        </div>
+        <hr class="w3-opacity">
+        <form action="mailto:ngrunhovd@gmail.com" method="GET" target="_blank">
+        <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input w3-border" type="text" name="subject" required>
+        </div>
+        <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input w3-border" type="text" name="email" required>
+        </div>
+        <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input w3-border" type="text" name="body" required>
+        </div>
+        <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+    <div class="w3-row-padding">
+        <div class="w3-third">
+        <h3 class="w3-center w3-border-bottom">WEBSITES</h3>
+        <ul class="w3-ul w3-border-0 w3-hoverable">
+            <li class="w3-padding w3-border-0">
+                <i class="fa fa-id-card-o fa-fw w3-margin-right"></i>
+                <span class="w3-large"><a href="index.html" target="_blank">ITSE 1310 Web Design Tools</a>
+                </span><br>
+            </li>
+            <li class="w3-padding w3-border-0">
+                <i class="fa fa-id-card-o fa-fw w3-margin-right"></i>
+                <span class="w3-large"><a href="../itse1311/index.html" target="_blank">ITSE 1311 Beginning Web Programming (JavaScript)</a>
+                </span><br>
+            </li> 
+        </ul>
+        </div>
+
+    <div class="w3-third">
+        <h3 class="w3-center w3-border-bottom">LET'S MAKE SOMETHING</h3>
+        <p class="w3-center">Feel free to contact me through social media or email. Thanks for checking out my site.</p>
+        </div>
+    
+    <div class="w3-third">
+        <h3 class="w3-center w3-border-bottom">POPULAR TAGS</h3>
+        <div class="w3-container"><p>
+            <span class="w3-tag w3-black w3-margin-bottom">Art</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Drawing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Coloring</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Painting</span> <span class="w3-tag w3-black w3-margin-bottom">Photoshop</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Illustrator</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Design</span> <span class="w3-tag w3-black w3-margin-bottom">Photography</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Nature</span>
+            <span class="w3-tag w3-grey w3-small w3-margin-bottom">Editing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Retouching</span>
+            <span class="w3-tag w3-black w3-margin-bottom">Design</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Customizing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Web Design</span>
+        </p></div>
+        </div>
+
+    </div>
+    </footer>
+    
+    <div class="w3-black w3-center w3-padding-16"><a href="https://www.dallascollege.edu/pages/default.aspx?gm-vt=1" target="_blank">Dallas College Website</a>
+    <a href="#top" class="w3-btn w3-right">Top</a>
+    </div>
+
+    <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+        }
+    </script>
+
+    </body>
+    </html>

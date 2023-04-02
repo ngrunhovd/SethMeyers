@@ -1,26 +1,28 @@
 * {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  color: navy;
-}
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+  }
+  
+body {
+  background: url(../images/nycTimes-lg.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position:top center;
+}  
 
 p {
   font-size: 16px;
   margin: 1em 2em;
   line-height: 1.5em;
-  color: navy;
+  color: white;
 }
- 
-body {
-  background: linear-gradient(0deg, navy 40%, rgb(32, 131, 218));
-}  
-
+  
 header {
   width: 100%;
   margin: 10px auto;
   padding: 10px;
-  background-color: goldenrod;
-  border-color: aliceblue;
+  background-color: navy;
+  border-color: goldenrod;
   border-style: solid;
   border-radius: 10px;
   text-align: center;
@@ -43,11 +45,10 @@ section {
   height: 100%;
   margin: 5px auto;
   float: left;
-  background-color: goldenrod;
-  border-color: aliceblue;
+  background-color: navy;
+  border-color: goldenrod;
   border-style: solid;
   border-radius: 10px;
-  text-align: justify;
 }
 
 article {
@@ -55,7 +56,6 @@ article {
   height: 100%;
   margin: 5px auto;
   float: left;
-  text-align: justify;
 }
 
 #aside {
@@ -70,8 +70,8 @@ footer {
   width: 100%;
   margin: 5px auto;
   clear: both;
-  background-color: goldenrod;
-  border-color: aliceblue;
+  background-color: navy;
+  border-color: goldenrod;
   border-style: solid;
   border-radius: 10px;
 }
@@ -83,8 +83,8 @@ footer {
 
 .topnav {
   margin: 5px auto;
-  background-color: goldenrod;
-  border-color: aliceblue;
+  background-color: navy;
+  border-color: goldenrod;
   border-style: solid;
   border-radius: 10px;
   overflow: hidden;
@@ -93,7 +93,7 @@ footer {
 
 .topnav a {
   font-size: 17px;
-  color: black;
+  color: aliceblue;
   float: left;
   text-align: center;
   padding: 10px 15px;
@@ -101,18 +101,18 @@ footer {
   transition: text-decoration .2s;
 }
 
-.topnav a:hover{
-  transition: color .2s;
-  text-shadow: 0px 0px 10px black, 0 0 2px navy;  
-}
+  .topnav a:hover{
+    transition: color .2s;
+    text-shadow: 0px 0px 10px aliceblue, 0 0 2px white;  
+  }
 
-.topnav a:active {
-  color:lightskyblue;
-}
+  .topnav a:active {
+    color:lightskyblue;
+  }
 
-.topnav a.navRT{
-  float: right;
-}
+  .topnav a.navRT{
+    float: right;
+  }
 
 p.bio{
   font-size: 17px;
@@ -140,24 +140,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 a {
-  color: black;
+  color: aliceblue;
   text-decoration-line: none;
   transition: text-decoration .2s;
 }
 
   a:hover {
-    color: aliceblue;
+    color: gold;
     transition: color .2s;
   }
 
   a:active {
-    color:lightskyblue;
+    color:magenta;
   }
 
 .profile {
   max-width: 250px;
   border-style: solid;
-  border-color: aliceblue;
+  border-color: goldenrod;
   border-radius: 10px;
 }
 
@@ -168,24 +168,29 @@ a {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#questions {
+#questions, ol {
   font-size: 17px;
   list-style-type: decimal;
 }
 
 #answers, dt {
-  color: black;
+  color: aliceblue;
   font-style: italic;
   font-size: 14px;
   margin: .5em;
 }
 
 #answers, dd {
-  color: navy;
+  color: white;
   font-style: normal;
   font-size: 17px;
   margin-left: 1.5em;
-  text-align: justify;
+}
+
+#answers, ol {
+  list-style-type: lower-alpha;
+  font-size: 25px;
+  line-height: 1.5em;
 }
 
 #contact-us {
@@ -240,7 +245,7 @@ figcaption {
   width: 80%;
   max-width: 720px;
   margin: 10px auto;
-  background-color: goldenrod;
+  background-color: navy;
   border-style: solid;
   border-color: aliceblue;
   border-radius: 10px;
@@ -254,3 +259,29 @@ figcaption {
   float: right;
 }
 
+section.game {
+  min-height: 380px;
+}
+
+#game {
+  font-size: 25px;
+}
+
+#gameDir {
+  font-size: 24px;
+  text-align: center;
+}
+
+button.game {
+  float: right;
+  height: 40px;
+  width: fit-content;
+  margin: 20px;
+  margin-top: 180px;
+  background-color: aliceblue;
+  color: navy;
+  border-color: white;
+  border-style: outset;
+  border-width: 8px;
+  border-radius: 5px;
+}

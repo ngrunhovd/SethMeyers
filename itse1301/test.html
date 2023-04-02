@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../favicon.ico">
   <link rel="apple-touch-icon" href="../favicon.ico">
-  <link rel="stylesheet" href="css/mystyles.css">
+  <link rel="stylesheet" href="../css/1301styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>My First Page</title>
 </head>
 
@@ -16,37 +17,38 @@
     <h1 class="header">Hello World!</h1>
   </header>
 
-  <nav>
-    ITSE 1301 Web Design Tools:
-    <a class="nav" href="index.html" target="_self">Index</a> |
-    <a class="nav" href="gallery.html" target="_self">Gallery</a> |
-    <a class="nav" href="faq.html" target="_self">FAQ</a> |
-    <a class="nav" href="test.html" target="_self">Test</a> |
-    <a class="nav" href="contact-us.html" target="_self">Contact Us</a> |
-    <a class="nav" href="../itse1311/index.html" title="Visit the Beginning Web Programming page">ITSE 1311</a>
+  <nav class="topnav w3-hover-amber">
+    <a href="index.html" target="_self">ITSE 1301 Home</a>
+    <a href="gallery.html" target="_self">Gallery</a>
+    <a href="faq.html" target="_self">FAQ</a>
+    <a href="test.html" target="_self">Test</a>
+    <a href="about-us.html" class="w3-bar-item w3-btn w3-round-large" target="_self">About Us</a>
+    <a href="contact-us.html" target="_self">Contact Us</a>
+    <a class="navRT" href="../itse1311/index.html" title="Visit the Beginning Web Programming page">ITSE 1311 Home</a>
   </nav>
 
   <main>
-  <section>
-    <h2 class="title">About the author...</h2>
-    <p class="paragraph">
-      My name is Nick, I grew up in the DFW area and now live in Dallas while working at Parkland. I've been an x-ray tech for 
-      over 10 years and I'm read for a change and to challenge myself to learn something new. I am still new to programming but 
-      I think web development will be a good start to test my creative and problem solving skills. I enjoy doing artistic 
-      and outdoor hobbies, so I hope to find a career that is fun to work in and with more time to explore the world.
-    </p>
-  </section>
-  
-  <aside>
-    <img class="nickPic" src="../images/nickPic.jpg" alt="nickPic.jpg"></a>
-  </aside>
+    <section>
+      <article>
+        <h2 class="title">About the author...</h2>
+        <p class="paragraph">
+          My name is Nick, I grew up in the DFW area and now live in Dallas while working at Parkland. I've been an x-ray tech for 
+          over 10 years and I'm read for a change and to challenge myself to learn something new. I am still new to programming but 
+          I think web development will be a good start to test my creative and problem solving skills. I enjoy doing artistic 
+          and outdoor hobbies, so I hope to find a career that is fun to work in and with more time to explore the world.
+        </p>
+      </article>
+      <article id="aside">
+        <img class="profile" src="../images/nickPic.jpg" alt="nickPic.jpg"></a>
+      </article>
+    </section>
   </main>
 
-  <footer>
-    <a href="https://www.dallascollege.edu/pages/default.aspx?gm-vt=1" target="_blank">Dallas College website</a><br>
-    <a href="mailto:e2448648@student.dcccd.edu">Email the webmaster</a><br>
-    <a href="test.html" target="_self">Author: Nick G</a><br>
-    <a href="#top">Top of page</a>
+  <footer class="footer w3-hover-amber">
+    <a href="https://www.dallascollege.edu/pages/default.aspx?gm-vt=1" class="w3-bar-item w3-btn w3-round-large" style="width:24.5%" target="_blank">Dallas College Website</a>
+    <a href="mailto:e2448648@student.dcccd.edu" class="w3-bar-item w3-btn w3-round-large" style="width:24.5%">Email the webmaster</a>
+    <a href="test.html" class="w3-bar-item w3-btn w3-round-large" style="width:24.5%" target="_self">Author: Nick G</a>
+    <a href="#top" class="w3-bar-item w3-btn w3-round-large" style="width:24.5%">Top of page</a>
   </footer>
 </body>
 </html>

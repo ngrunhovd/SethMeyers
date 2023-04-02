@@ -3,16 +3,16 @@ array of 3 trivia questions, create a second array that contains the answers
 Loop through the questions to prompt the user for the answer. Compare the prompt to the answers array. 
 They get  3 tries, First try = 3 points. Second try = 2 points. Third try = 1 point. Wrong = 0 point
 Questions should be single word, Answers should be text strings, not numbers.*/
-console.log(meyersQuiz);
+console.log("meyersQuiz");
 
 const question = [  //use const to not delcare a global variable outside of a function
     'What are the initials of Saturday Night Live?', 
-    'True or False? Seth Meyers hosts The Tonight Show with Jimmy Fallon.', 
+    'Which show is Seth Meyers the host of?\nA (The Late Show)\nB (The Tonight Show)\nC (Late Night)\nD (The Daily Show)', 
     'How many Primetime Emmy Awards has Late Night with Seth Meyers won?'
 ];  //close array 1
 const answer = [
     'SNL', 
-    'FALSE', 
+    'C', 
     '0'
 ];  //close array 2
 

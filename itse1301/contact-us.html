@@ -2,123 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="css/mystyles.css">
-    <link rel="apple-touch-icon" href="../favicon.ico">
-    <link rel="stylesheet" href="css/mystyles.css">
-    <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="css/mystyles.css">
+  <link rel="apple-touch-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/1301styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Contact Us</title>
 </head>
-<!--Create a contact us page using a form, input fields, radio and check buttons, text field
+<!--Create a contact us page using a form, input class="w3-input w3-round-large" fields, radio and check buttons, text field
     Include accessibility features (titles, labels, data fields)
     THEN!!! make a table with 3 columns and 5 rows of data
     Include tag, caption, thread(fatal error), tbody, tr th td, headers with scope accessibility, & tabular data
 -->
-  <body>
+<body>
   <header>
     <h1 class="header">Contact Us</h1>
   </header>
 
-  <nav>
-    ITSE 1301 Web Design Tools:
-    <a class="nav" href="index.html" target="_self">Index</a> |
-    <a class="nav" href="gallery.html" target="_self">Gallery</a> |
-    <a class="nav" href="faq.html" target="_self">FAQ</a> |
-    <a class="nav" href="test.html" target="_self">Test</a> |
-    <a class="nav" href="contact-us.html" target="_self">Contact Us</a> |
-    <a class="nav" href="../itse1311/index.html" title="Visit the Beginning Web Programming page">ITSE 1311</a>
+  <nav class="topnav w3-hover-amber">
+    <a href="index.html" target="_self">ITSE 1301 Home</a>
+    <a href="gallery.html" target="_self">Gallery</a>
+    <a href="faq.html" target="_self">FAQ</a>
+    <a href="test.html" target="_self">Test</a>
+    <a href="about-us.html" class="w3-bar-item w3-btn w3-round-large" target="_self">About Us</a>
+    <a href="contact-us.html" target="_self">Contact Us</a>
+    <a class="navRT" href="../itse1311/index.html" title="Visit the Beginning Web Programming page">ITSE 1311 Home</a>
   </nav>
 
-  <main id="contact-us">
-    <h1 class="chapter">Submit your questions, comments, or corrections here</h1>
-    <fieldset id="contact-us">
-      <legend>Enter your information and press submit below</legend>
-      <form id="email-form" action="mailto:e2448648@student.dcccd.edu" method="post">
-        <h2>Contact Information</h2>
-        <p>
-          <label title="Full Name"> Name: <input type="text" name="name" placeholder="Name"></label>
-        </p>
-        <p>
-          <label title="Email Address"> E-Mail: <input type="text" name="email" placeholder="Email"></label>
-        </p>
-        <p>
-          <label title="Join Mailing List"><input type="checkbox" name="subscribe">  
-              Check box to join the mailing list</label>
-        </p>
-        <h3>What brings ya here?</h3>
-        <p>
-          <label title="Professor"><input type="radio" name="referral"> I'm grading you</label><br>
-          <label title="Peer"><input type="radio" name="referral"> I'm in your class</label><br>
-          <label title="Friend"><input type="radio" name="referral"> The "webmaster" insisted</label><br>
-          <label><input type="radio" name="referral"> I'm not sure, I think it was the dark web</label><br>
-        </p>
-        <h2>Message</h2>
-        <p>
-        <label title="Message Group">What would you like to talk about today?</label>
-        <select name="message-group">
-          <option value="Share">Something nice to share</option>
-          <option value="Question">Question</option>
-          <option value="Comment">Comment</option>
-          <option value="Correction">Correction</option>
-          <option value="Jackals">Jackal Support Group</option>
-        </select>
-        </p>
-        <p>
-          <label for="message">Enter your message in the box.</label><br>
-          <textarea id="message" name="message" placeholder="i.e. Wow! This website is amazing"></textarea>
-        </p>
-        <input type="submit" name="submit" value="Submit">
-      </form>
-    </fieldset>
+  <main>
+    <section class=" w3-hover-amber">
+      <h1 class="chapter">Submit your questions, comments, or corrections here</h1>
+      <fieldset class="w3-card w3-border-0 w3-round-large">
+        <legend>Enter your information and press submit below</legend>
+        <form class="w3-container" action="mailto:e2448648@student.dcccd.edu" method="post">
+          <h2>Contact Information</h2>
+          <p>
+            <label title="Full Name"> Name <input class="w3-input w3-round-large" type="text" name="name" placeholder="Name"></label>
+          </p>
+          <p>
+            <label title="Email Address"> E-Mail <input class="w3-input w3-round-large" type="text" name="email" placeholder="Email"></label>
+          </p>
+          <p>
+            <label title="Join Mailing List"><input class="w3-check w3-round-large" type="checkbox" name="subscribe">  
+                Check box to join the mailing list</label>
+          </p>
+          <h3>What brings ya here?</h3>
+          <p>
+            <label title="Professor"><input class="w3-radio w3-round-large" type="radio" name="referral"> I'm grading you</label><br>
+            <label title="Peer"><input class="w3-radio w3-round-large" type="radio" name="referral"> I'm in your class</label><br>
+            <label title="Friend"><input class="w3-radio w3-round-large" type="radio" name="referral"> The "webmaster" insisted</label><br>
+            <label><input class="w3-radio w3-round-large" type="radio" name="referral"> I'm not sure, I think it was the dark web</label><br>
+          </p>
+          <h2>Message</h2>
+          <p>
+          <label title="Message Group">What would you like to talk about today?</label>
+          <select class="w3-select w3-round-large" name="subject">
+            <option value="Share">Something nice to share</option>
+            <option value="Question">Question</option>
+            <option value="Comment">Comment</option>
+            <option value="Correction">Correction</option>
+            <option value="Jackals">Jackal Support Group</option>
+          </select>
+          </p>
+          <p>
+            <label for="message">Enter your message in the box.</label><br>
+            <textarea class="w3-round-large" id="message" name="body" placeholder="i.e. Wow! This website is amazing"></textarea>
+          </p>
+          <input class="w3-input w3-round-large" type="submit" name="submit" value="Submit">
+        </form>
+      </fieldset>
+    </section>
+    <section>
+      <table class="w3-table-all w3-hoverable w3-centered w3-hover-amber" cellpadding="5" cellspacing="3" border = "1"> <!--temporary cell formatting-->
+        <thead>
+          <tr class="w3-light-gray">
+            <th colspan="3" abbr="Career Highlights">Seth Meyers' Career Highlights</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="w3-hover-amber">
+            <th scope="col" abbr="Title" id="col1">Title</th>
+            <th scope="col" abbr="Year" id="col2">Year</th>
+            <th scope="col" abbr="Credits" id="col3">Credits</th>
+          </tr>
+          <tr class="w3-hover-amber">
+            <th scope="row" headers="col1" rowspan="2">Saturday Night Live</th>
+            <td headers="col2">2001-2014</td>
+            <td headers="col3">Cast, writer</td>
+          </tr>
+          <tr class="w3-hover-amber">
+            <td headers="col2">2006-2014</td>
+            <td headers="col3">Head Writer</td>
+          </tr>
+          <tr class="w3-hover-amber">
+            <th scope="row" headers="col1">Late Night with Seth Meyers</th>
+            <td headers="col2">2014-current</td>
+            <td headers="col3">Host, writer</td>
+          </tr>
+          <tr class="w3-hover-amber">
+            <th scope="row" headers="col1">Saturday Night Live</th>
+            <td headers="col2">2018</td>
+            <td headers="col3">Host (S44, ep4)</td>
+          </tr>
+          <tr class="w3-hover-amber">
+            <th scope="row" headers="col1">Lobby Baby</th>
+            <td headers="col2">2019</td>
+            <td headers="col3">Comedian, writer</td>
+          </tr>
+        </tbody>
+        <caption class="w3-left">Seth Meyers' Career Highlights</caption>
+      </table>
+    </section>
   </main>
-
-  <table id="career-table" cellpadding="5" cellspacing="3" border = "1"> <!--temporary cell formatting-->
-    <caption>Seth Meyers' Career Highlights</caption>
-    <thead>
-      <tr>
-        <th colspan="3" abbr="Career Highlights">Seth Meyers' Career Highlights</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="col" abbr="Title" id="col1">Title</th>
-        <th scope="col" abbr="Year" id="col2">Year</th>
-        <th scope="col" abbr="Credits" id="col3">Credits</th>
-      </tr>
-      <tr>
-        <th scope="row" headers="col1" rowspan="2">Saturday Night Live</th>
-        <td headers="col2">2001-2014</td>
-        <td headers="col3">Cast, writer</td>
-      </tr>
-      <tr>
-        <td headers="col2">2006-2014</td>
-        <td headers="col3">Head Writer</td>
-      </tr>
-      <tr>
-        <th scope="row" headers="col1">Late Night with Seth Meyers</th>
-        <td headers="col2">2014-current</td>
-        <td headers="col3">Host, writer</td>
-      </tr>
-      <tr>
-        <th scope="row" headers="col1">Saturday Night Live</th>
-        <td headers="col2">2018</td>
-        <td headers="col3">Host (S44, ep4)</td>
-      </tr>
-      <tr>
-        <th scope="row" headers="col1">Lobby Baby</th>
-        <td headers="col2">2019</td>
-        <td headers="col3">Comedian, writer</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <footer>
-    <a href="https://www.dallascollege.edu/pages/default.aspx?gm-vt=1" target="_blank">Dallas College Website</a><br>
-    <a href="mailto:e2448648@student.dcccd.edu">Email the webmaster</a><br>
-    <a href="test.html" target="_self">Author: Nick G</a><br>
-    <a href="#top">Top of page</a>
+  <footer class="footer w3-hover-amber">
+    <a href="https://www.dallascollege.edu/pages/default.aspx?gm-vt=1" class="w3-bar-item w3-btn w3-round-large" style="width:24.5%" target="_blank">Dallas College Website</a>
+    <a href="mailto:e2448648@student.dcccd.edu" class="w3-bar-item w3-btn w3-round-large" style="width:24.5%">Email the webmaster</a>
+    <a href="test.html" class="w3-bar-item w3-btn w3-round-large" style="width:24.5%" target="_self">Author: Nick G</a>
+    <a href="#top" class="w3-bar-item w3-btn w3-round-large" style="width:24.5%">Top of page</a>
   </footer>
 </body>
 </html>

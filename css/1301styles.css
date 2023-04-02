@@ -47,7 +47,6 @@ section {
   border-color: aliceblue;
   border-style: solid;
   border-radius: 10px;
-  text-align: justify;
 }
 
 article {
@@ -55,7 +54,6 @@ article {
   height: 100%;
   margin: 5px auto;
   float: left;
-  text-align: justify;
 }
 
 #aside {
@@ -129,14 +127,17 @@ h1, h2, h3, h4, h5, h6 {
 }
   .header{
     font-size: 34px;
+    margin-left: 1em;
   }
 
   .title{
     font-size: 30px;
+    margin-left: 1em;
   }
 
   .chapter{
     font-size: 24px;
+    margin-left: 1em;
   }
 
 a {
@@ -146,12 +147,12 @@ a {
 }
 
   a:hover {
-    color: aliceblue;
+    color: white;
     transition: color .2s;
   }
 
   a:active {
-    color:lightskyblue;
+    color:magenta;
   }
 
 .profile {
@@ -168,7 +169,7 @@ a {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#questions {
+#questions, ol {
   font-size: 17px;
   list-style-type: decimal;
 }
@@ -185,11 +186,9 @@ a {
   font-style: normal;
   font-size: 17px;
   margin-left: 1.5em;
-  text-align: justify;
 }
 
 #contact-us {
-  background-color: aliceblue;
   max-width: 840px;
   border-radius: 1em;
 }
